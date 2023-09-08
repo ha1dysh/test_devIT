@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body * {
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+}
+
+body {
+	height: 100dvh;
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: 1.3fr 0.7fr;
+	grid-template-rows: 1fr 0.5fr 5fr 1fr;
+	gap: 0.5rem;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"main aside"
+		"footer footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.text-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
