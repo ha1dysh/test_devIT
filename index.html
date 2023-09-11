@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="flex.css">
-	<!-- <script src="scripts/task1.js"></script> -->
-	<!-- <script src="scripts/task2.js"></script> -->
-	<!-- <script src="scripts/task3.js"></script> -->
-	<!-- <script src="scripts/task4.js"></script> -->
-	<!-- <script src="scripts/task5.js"></script> -->
-	<script src="scripts/task6.js"></script>
+	<link rel="stylesheet" href="css/flex.css" id="S">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="dist/task6.js"></script>
 	<title>Document</title>
 </head>
 <body>
 	<header class="text-center">header</header>
-	<nav class="text-center">navigation</nav>
-	<div>
+	<nav class="text-center">
+		<button onclick="getElementById('S').href='css/flex.css'">flex</button>
+		<button onclick="getElementById('S').href='css/grid.css'">grid</button>
+		<button onclick="getElementById('S').href='css/square.css'">square</button>
+	</nav>
+	<div class="sqr">
 		<main class="text-center">content</main>
 		<aside class="text-center">sidebar</aside>
 	</div>

@@ -26,7 +26,7 @@ function reliableMultiply(a: number, b: number) {
             return reliableMultiply(a, b)
         } else {
 
-            // если Еррор - выбрасываем ошибку без трай-кетч
+            // если ошибка Еррор - выбрасываем ошибку без трай-кетч
             throw error;
         }
     }

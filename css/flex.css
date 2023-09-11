@@ -1,0 +1,40 @@
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+header, footer {
+	height: 10%;
+}
+
+nav {
+	height: 5%;
+}
+
+div {
+    display: flex;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+main {
+	flex-basis: 66.66%;
+}
+
+aside {
+	flex-basis: 33.33%;
+}
+
+div::before {
+	content: 'Flex';
+	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(35deg);
+
+	color: #f33f3315;
+	font-size: 10rem;
+}

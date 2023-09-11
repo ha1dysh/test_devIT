@@ -1,0 +1,53 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 10% 5% auto 10%;
+	gap: 0.5rem;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"div div"
+		"footer footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+div {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0.5rem;
+	grid-template-areas:
+		"main aside";
+	grid-area: div;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+div::before {
+	content: 'Grid';
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(35deg);
+
+	color: #f33f3315;
+	font-size: 10rem;
+}
