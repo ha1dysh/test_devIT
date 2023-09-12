@@ -22,16 +22,16 @@ div {
 
 @keyframes spinSquare {
     0% {
-        background-color: red;
         transform: rotate(0deg);
+        background-color: red;
     }
-    25% {
+    33% {
         background-color: orange;
     }
-    50.0% {
+    66% {
         background-color: green;
     }
-    100.0% {
+    100% {
         transform: rotate(360deg);
         background-color: red;
     }
